@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1 WEBPRO</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="profile">
+                <img src="foto/WHOIAMnew.png" width="100px" height="150px">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="quiz1/profile.html">Profile</a></li>
+                    <li><a href="quiz1/hometown.html">Hometown</a></li>
+                    <li><a href="quiz1/food.html">Food</a></li>
+                    <li><a href="quiz1/tourist.html">Tourist</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="info">
+            <div class="overlay"></div>
+            <img src="foto/Foto Profile.png" class="profilepic">
+            <div id="circle">
+                <div class="feature satu">
+                    <img src="foto/pre.png">
+                    <div>
+                        <h1>Freelancer</h1>
+                        <p>love videography from high school</p>
+                    </div>
+                </div>
+                <div class="feature dua">
+                    <img src="foto/football.png">
+                    <div>
+                        <h1>GGMU</h1>
+                        <p>Glory Glory Manchester United</p>
+                        <p>and Green Force till I die</p>
+                    </div>
+                </div>
+                <div class="feature tiga">
+                    <img src="foto/valo.png">
+                    <div>
+                        <h1>Gold Player</h1>
+                        <p>support the duelist</p>
+                    </div>
+                </div>
+                <div class="feature empat">
+                    <img src="foto/basketball.png">
+                    <div>
+                        <h1>Big Man</h1>
+                        <p>love to see NBA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <img src="foto/button.png" id="upTmbl">
+            <h3>Hobbies</h3>
+            <img src="foto/button.png" id="downTmbl">
+        </div>
+
+        
+    </div>
+
+    <script>
+        var circle = document.getElementById("circle");
+        // var circle = document.getElementById("upTmbl");
+        // var circle = document.getElementById("downTmbl");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upTmbl.onclick = function(){
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        downTmbl.onclick = function(){
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+
+    </script>
+
+</body>
+</html>
